@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat' sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span{
+    color: gold;
+    }
+
+
+.cta{
+        display: inline-block;
+        padding: 10px 30px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid gold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: 30px;
+        transition: .3s ease;
+        transition-property: background-color, color;
+    
+    }
+    
+.cta:hover{
+        color: white;
+        background-color: gold;
+    }
+
+    .brand h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .brand h1 span{
+        color: gold;
+    }
+/* Hero Section*/
+#hero{
+    background-image: url(./images/cover.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+#hero h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: gold;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+#hero h1:nth-child(1)span{
+    animation-delay: .5s;
+}
+#hero h1:nth-child(2)span{
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(3)span{
+    animation-delay: 2.5s;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+
+}
+
+#hero .cta:hover{
+    color: white;
+    background-color: gold;
+}
+/* End of Hero Section*/
+
+/* Skill Set Section*/
+
+#skills .skills{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#skills .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#skills .section-title span{
+color: gold;
+}
+
+#skills .skills-top p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+
+}
+
+#skills .skills-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+
+}
+#skills .skill-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./images/skills.jpeg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#skills .skill-item::after{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: maroon ;
+opacity: .8;
+z-index: -1;
+}
+
+#skills .skills-bottom .icon{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+
+}
+#skills .skills-bottom .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#skills .skill-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#skills .skill-item p{
+    color: white;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#skills .skill-item p{
+    color: white;
+    text-align: justify;
+}
+/*End of Skill Set Section*/
+
+/* Projects Section*/
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .projects-header h1{
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: maroon;
+    color: white;
+}
+
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#projects .project-info p{
+    color: white;
+    text-align: justify;
+}
+
+#projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#projects .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: maroon ;
+    opacity: .6;
+}
+#projects .project-img img{
+    transition: .3s ease transform;
+}
+
+#projects .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+
+
+/*End of Projects Section*/
+
+
+/*Recent Publications*/
+#publications .publications {
+flex-direction: column;
+max-width: 1200px;
+margin: 0 auto;
+padding: 100px 0;
+}
+
+#publications .publications-header h1{
+margin-bottom: 50px;
+text-align: justify;
+}
+
+#publications .all-publications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#publications .publication-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+#publications .publication-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: maroon;
+
+}
+
+#publications .publication-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+}
+
+#publications .publication-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: white;
+}
+
+#publications .publication-info p{
+    color: white;
+    text-align: justify;
+}
+/*End of Recent Publications*/
+
+
+/* About Section */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#about .col-right .cta{
+color: black;
+margin-bottom: 50px;
+padding: 10px 20px;
+font-size: 2rem;
+}
+
+#about .col-left .about-img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+ 
+}
+
+#about .col-left .about-img::after {
+ content: '';
+ position: absolute;
+ left: -33px;
+ top: 19px;
+ height: 98%;
+ width: 98%;
+ z-index: -1;
+}
+/* End of About Section  */
+
+/*Contact Section*/
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 400px;
+}
+
+#contact .contact-item {
+width: 80%;
+padding: 20px;
+text-align: center;
+border-radius: 10px;
+padding: 30px;
+margin: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0px 0px 18px 0 #0000002c;
+transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+}
+/* End of Contact Section*/
+
+/*Footer*/
+#footer{
+    background-color: maroon ;
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+
+#footer .social-item img{
+    filter: brightness(1);
+
+}
+
+#footer .social-item:hover img{
+    filter:brightness(0);
+}
+
+
+
+/*End Footer*/
+
+
+/* Keyframes*/
+@keyframes text_reveal_box{
+    50%{
+  width: 100%;
+  left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+        100%{
+            color: gold;
+            font-weight: 500;
+        }
+}
+/* End of Keyframes*/
+
+
