@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+</head>
+<body>
+    <!-- Hero Section-->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hi there, welcome to my personal website!<span></span></h1>
+                <h1>My Name Is<span></span></h1>
+                <h1>Kofi Addo Annan.<span></span></h1>
+      
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section-->
+
+    <!-- Skills Section-->
+<section id="skills">
+    <div class="skills container">
+        <div class="skills-top">
+            <h1 class="section-title">My Skill <span>Set</span></h1>
+            <p> I have very good organizational and time management skills. My greatest strength is my ability
+ to effectively handle multiple projects resulting in timely completions.</p>
+        </div>
+        <div class="skills-bottom"></div>
+        <div class="skill-item">
+            <div class="icon"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-coding-education-prettycons-flat-prettycons.png"/></div>
+            <h2>Coding</h2>
+            <p>I have a very good coding background, some which I perfected through my personal studies. This involves 
+                my ability to understand a problem at hand, analyse the problem and find suitable algorithms to solve 
+                it using the appropriate programming language which can incorporate these algorithms. 
+                I am proficient in Python, CSS, HTML, C, and C++.   </p>
+        </div>
+        <div class="skill-item">
+            <div class="icon"><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-simulation-the-future-flaticons-flat-flat-icons.png"/></div>
+            <h2>Simulation Tools</h2>
+            <p> During my time as an undergraduate student while pursuing Electrical/Electronic Engineering, I gained knowledge in Power System Simulation. 
+                Consequently, the Electronics courses in the Electrical/Electronic Engineering curriculum allowed me perform some simulations in circuits as well. 
+                Simulation Softwares include: Totally Integrated Automation Portal(TIA Portal), MATLAB, Multisim and LT Spice. </p>
+        </div>
+        <div class="skill-item">
+            <div class="icon"><img src="https://img.icons8.com/nolan/64/circuit.png"/></div>
+            <h2>Hardware Implementation</h2>
+            <p>During my final year as an undergraduate student researcher, I had the opportunity to work in a group of three(3) students where we designed
+                and implemented an automated traffic light system which is optimized to control emergency situations on our Ghanaian roads to ease congestion and faster response times.
+            My interest in emerging transportation electrification technologies had me working on several design projects in automatic inductive charging and battery management systems. 
+        Skill: Soldering circuit and PCB Designs </p>
+        </div>
+        <div class="skill-item">
+            <div class="icon"><img src="https://img.icons8.com/color/48/000000/new-presentation.png"/></div>
+            <h2>Presentation and Writing</h2>
+            <p>My educational background and work experiences has enhanced my presentation and writing skills. Major skills include: Preparing informative and comprehensible presentations or writing. Public speaking. </p>
+        </div>
+    </div>
+</section>
+    <!-- End of Skills Section-->
+
+    <!-- Projects Section -->
+<section id="projects">
+    <div class="projects container">
+        <div class="projects-header">
+            <h1 class="section-title"><span>Pro</span>jects</h1>
+        </div>
+
+      
+
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Design and Testing of a 3.7V to 30V DC-DC Boost
+                        Converter for Two 12V Cooling Fans Connected in
+                        Series.</h1>
+                    <h2>Project Description</h2>
+                    <p>The two (2) TIP41C NPN transistors are used for switching in the converter circuit. The 18650 battery
+                        outputs about 2-3 amps to the base of the TIP41 transistors. The current begins to flow from the base to
+                        the emitter until the transistor is ‘ON’.
+                        The ‘ON’ and ‘OFF’ operation of the TIP41 transistors causes current to flow through the 24-0-24 toroidal
+                        inductor. At this point, the inductor stores energy in its magnetic field. When the TIP41 transistor is in its
+                        ‘OFF’ state, there is a sudden drop of the inductor current and this change in inductor current produces a
+                        back emf in addition to the supply voltage which forward bias the 1N5400 diode and charges up the 3300µF
+                        capacitor minus a small voltage drop across the 1N5400 diode.
+                        This voltage is supplied to the two (2) 12V cooling fans connected in series. The 3300µF capacitor is
+                        recharged each time the transistors are ‘OFF’ thus maintaining a steady output voltage across the loads.</p>
+                        <a href="Boost-Converter-Project.pdf" class="cta">Download Project</a>
+                        <a href="dc-dc_boost_video.mp4" class="cta">Video Demonstration</a>
+                </div>
+                <div class="project-img">
+                    <img src="./images/final.jpg" alt="img">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Design and Implementation of a Cost Effective, Less Efficient, Non-Smart Wired Battery Management System Which
+                        is Capable of Charging a 3S Battery Pack, Protect it From Overvoltage, Balance The Batteries, and Limit
+                        The Charging Current.</h1>
+                    <h2>Project Description</h2>
+                    <p>A basic prototype of a wired battery management system is built which performs the following functions; Charge the lithium-ion battery, limit the charging current, and  perform battery balancing.
+
+                        The lithium-ion battery usually has a nominal voltage of 3.7V and about 4.2V when fully charged. This
+                        wired battery management system is designed to charge a 3S battery pack of lithium-ion cells individually
+                        having different internal structures. Thus, one cell will charge faster than the other due to different discharge
+                        rates or internal resistances.
+
+                        The BD140 transistor is connected in series with the four (4) 1N4007 diodes. A TL431 zener reference diode
+                        is connected to the base of the transistor. This connection is purposely for the TL431 zener reference diode
+                        to open at a voltage value which is 4.2V when the lithium-ion battery is fully charged. At this instance,
+                        when the BD140 transistor is active, the charging current will bypass the battery and go through the four
+                        (4) 1N4007 diodes connected in series with the transistor. This power will be wasted on the diodes hence
+                        the circuit is less efficient. Also, this charging current will light up the LED to indicate full charge. The
+                        reference pin of the TL431 zener is connected to the 20k potentiometer hence by adjusting the potentiometer
+                        value to the 4.2V, the charging process stops at that voltage value. By this process, passive cell balancing is
+                        achieved while charging the 3S battery pack.</p>
+                        <a href="BMS-Project.pdf" class="cta">Download Project</a>
+                        <a href="bms_video_1.mp4" class="cta">Video Demonstration 1</a>
+                        <a href="bms_video_2.mp4" class="cta">Video Demonstration 2</a>
+                </div>
+                <div class="project-img">
+                    <img src="./images/project4.jpeg" alt="img">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Design and Implementation of a Cost Effective Wireless Power Transfer Circuit That Supplies Power to Multiple
+                        Loads.</h1>
+                    <h2>Project Description</h2>
+                    <p>A prototype of a wireless power transmission system which works under the principle of electromagnetic
+                        mutual induction is built. A 230VAC is stepped down by the 220V/12V transformer. This 12VAC is fed
+                        to the full bridge rectifier circuit. Here, the AC voltage is converted to a pulsating DC voltage by the four
+                        1n4007 diodes and the 2200uF capacitor. The rippled output of the rectifier is smoothened by the 2200uF
+                        capacitor into a more DC output voltage.
+
+                        A 12V voltage regulator is used to maintain a constant voltage. Also, there is an led used as an indicator to show that the circuit functions properly. The TTC5200 transistor generates a high frequency AC
+                        current across the coil thus creating a magnetic field around it. This magnetic field is transferred to the coil
+                        at the receiver side by the Faraday’s law of induction. Another rectifier circuit is installed at the receiver
+                        side to ensure the AC voltage is converted to DC. The EMF generated is used to light the LEDs and power
+                        the USB charger by the help of 5V voltage regulator. A 2-way switch is used to switch between the two
+                        loads.</p>
+                        <a href="WPT-Project.pdf" class="cta">Download Project</a>
+                        <a href="WPT_video.mp4" class="cta">Video Demonstration</a>
+                </div>
+                <div class="project-img">
+                    <img src="./images/project1.jpeg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- End of Projects Section -->
+
+
+
+
+    <!-- Recent Publications-->
+<section id="publications">
+    <div class="publications container">
+        <div class="publications-header">
+            <h1 class="section-title"><span>Publi</span>cations</h1>
+        </div>
+
+
+        <div class="all-publications">
+            <div class="publication-item">
+                <div class="publication-info">
+                    <h1>Design and Implementation of Emergency Traffic Light Preemption System Using PLC Automation.</h1>
+                    <h2>Abstract</h2>
+                    <p>As traffic on the urban Ghanaian road network increases, congestion and delays are becoming more severe. Traffic
+                        signals are the most common method by which right of way is dynamically allocated to conflicting movements.
+                        Ghanaian traffic light control system is mainly designed by using devices such as timers, relays etc. The
+                        critical timing operation is required to be carried out under the existence of heavy traffic situations. This
+                        does not give this conventional traffic light control system the flexibility to control throughput to favor
+                        emergency vehicles. This conventional practice leads to many problems and subsequent delay for a long
+                        time. With the help of a PLC, the requirement of fast automation and effective optimization of traffic light
+                        control even in times of emergency can be achieved.
+                        At intersections, capacity bottlenecks are formed in urban road networks because at these locations,
+                        capacity must be shared by competing traffic movements. For this reason, this thesis introduces an
+                        execution and implementation of T-junction emergency traffic control system using SEIMENS S7-200 PLC.
+                        Programming in PLC is written in ladder logic with the help of STEP7 MICROWIN software.</p>
+                        <a href="Design_and_implementation_of_emergency_traffic_light_preemption_system_using_plc_automation.pdf" class="cta">Download Paper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- End of Recent Publications-->
+    <!-- About Section-->
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="./images/Kofi.jpeg" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">About <span>Me</span></h1>
+            <h2>Open to work</h2>
+            <p>Thinks and approahes problems critically through methods of academic research, data collection and optimization. Gained good communication skills,
+            organizational skills, and effective time management skills through my pronounced work experiences as a Teaching Assistant, Research Assistant and Project Engineer. My areas
+        of interest include transportation electrification, electrical machines, power electronics, machine learning and deep learning.</p>
+            <a href="Curriculum-vitae.pdf" class="cta">Download CV</a>
+        </div>
+    </div>
+
+</section> 
+
+    <!-- End About Section--> 
+
+    <!-- Contact Section-->
+<section id="contact">
+<div class="contact container">
+    <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+    <div class="contact-items">
+<div class="contact-item">
+    <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/apple-phone.png"/></div>
+    <div class="contact-info">
+        <h1>Phone</h1>
+        <h2>+233 20 420 3405</h2>
+    </div>
+</div>
+<div class="contact-item">
+    <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"/></div>
+    <div class="contact-info">
+        <h1>Email</h1>
+        <h2>annanpap3@gmail.com</h2>
+    </div>
+</div>
+<div class="contact-item">
+    <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/address--v1.png"/></div>
+    <div class="contact-info">
+        <h1>Address</h1>
+        <h2>Celebrity Hills Avenue, Sakumono.</h2>
+        <h2>Accra, Ghana.</h2>
+    </div>
+</div>
+    </div>
+</div>
+
+</section>
+
+    <!-- End Contact Section-->
+
+<!--Footer Section-->
+<section id="footer">
+    <div class="footer container">
+        <div class="brand"><h1>Kofi <span>Annan</span></h1></div>
+        <h2>Follow Me On</h2>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://www.instagram.com/kofi.addo.annan/"><img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/></a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/kofi-addo-annan-bsc-3a7a78172/"><img src="https://img.icons8.com/ios/50/000000/linkedin-circled--v1.png"/></a>
+            </div>
+            <div class="social-item">
+                <a href="https://twitter.com/AnnanKofiAddo1"><img src="https://img.icons8.com/ios/50/000000/twitter--v1.png"/></a>
+            </div>
+            <div class="social-item">
+                <a href="https://github.com/KofiAddoAnnan"><img src="https://img.icons8.com/sf-black-filled/64/null/github.png"/></a>
+            </div>
+        </div>
+        <p>Copyright Ⓒ 2022 Kofi Annan. All rights reserved.</p>
+    </div>
+</section>
+
+<!--End of Footer Section-->
+
+
+</body>
+</html>
